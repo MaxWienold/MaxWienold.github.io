@@ -1,0 +1,128 @@
+/*Typography*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Raleway:400,400i,600,600i&subset=latin-ext')
+@font-face
+	font-family: DoulosSILW
+	src: url("DoulosSIL-R.woff")
+
+$font-display: 'Josefin Sans', 'Arial', sans-serif
+$font-running: 'Raleway', sans-serif
+$font-serif: 'DoulosSILW', serif
+/* general classes*/
+
+.font-display
+	font-family: $font-display
+	font-style: normal
+	font-weight: 700
+.font-weight-normal
+	font-weight: 400
+.font-running
+	font-family: $font-running
+	color: #000
+.font-giant
+	font-size: 3.5rem
+	font-weight: 700
+	font-style: normal
+.font-big
+	font-size: 3em
+.font-medi
+	font-size: 2.5rem
+	font-weight: 700
+.font-normal
+	font-size: 1.5rem
+	line-height: 150%
+.font-small
+	font-size: 1rem
+
+
+.font-space-medi
+	letter-spacing: .1em
+
+.font-serif
+	font-family: $font-serif
+
+
+/*SITE-SPECIFIC STYLES*/
+/*aside-navigation*/
+.font-head
+	text-transform: uppercase
+	line-height: 80%
+	display: inline-block
+
+	position: relative
+
+	z-index: 301
+.font-head-padding
+	padding-bottom: $head-padding
+.font-navi-side
+
+	line-height: 50%
+.font-navi
+	line-height: 95%
+
+.font-navi-links a
+	color: inherit
+
+@media (max-width: $tablet)
+	.font-navi
+		font-size: 20px
+
+	.font-giant
+		font-size: 2rem
+.font-navi
+
+.font-navi-links
+	text-decoration: none
+	color: $base-grey
+	text-transform: uppercase
+	transition: all ease-in-out 200ms
+	&:hover
+		font-size: 1.75em
+		color: #000
+
+/* landing-page */
+
+.font-landing
+	top: -5vw
+	position: relative
+
+.head-after
+		&:after
+			content: ""
+			position: absolute
+			top: 10%
+			left: 20%
+			width: 100%
+			min-height: 20px
+			height: calc(100% - #{$head-padding})
+
+			z-index: -1000
+
+			margin-bottom: 200px
+.head-after-green
+	&:after
+		background-color: $base-green
+		transform: rotate(-12deg)
+.head-after-blue
+	&:after
+		background-color: $base-blue
+		transform: rotate(1deg)
+.head-after-red
+	&:after
+		background-color: $base-red
+		transform: rotate(-31deg)
+.head-after-grey
+	&:after
+		background-color: $base-grey
+		transform: rotate(-45deg)
+		
+
+/* contact */
+
+.mail-link
+	font-size: 2rem
+	color: $base-grey
+	transition: 150ms all ease-in-out
+	&:hover
+		color: $base-red

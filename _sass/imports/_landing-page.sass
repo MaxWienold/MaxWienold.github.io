@@ -1,0 +1,322 @@
+/* LANDING-PAGE */
+
+.navigation-landing
+	top: 0
+
+/* modified wrapper */
+
+.content-wrapper
+	padding-top: 120px
+	.content-wrapper-inner
+		/* layout for sections */
+		.section-wrapper
+			margin-bottom: -10vw
+			padding-bottom: -20vw
+			&:nth-child(even)
+				/* every second section has grey background-color */
+				background-color: lighten( $base-grey, 45%)
+				.landing-questions
+					margin: -5vw 0 -10vw 0
+				.diagonals
+					background-color: lighten( $base-grey, 45%)
+				.font-landing
+					left: 20px
+			&:nth-child(odd)
+				.font-landing
+					text-align: right
+					float: right
+					right: 20px
+
+
+.landing-questions
+	position: relative
+	padding:  0 0 30vw 0
+
+.diagonals
+	height: 20vw
+	width: 100%
+	margin-top: -10vw
+	display: inline-block
+	background-color: #fff
+	transform-origin: 100% 100%
+	transform: skewY(-5deg)
+.landing-ctas
+	display: inline
+	position: relative
+	margin: 100px 0 -100px 0
+	color: $base-grey
+	transition: all ease-in-out 300ms
+	&:after
+		z-index: -100
+		height: 10%
+		width: 100%
+		position: absolute
+		top: 10%
+		transition: all ease-in-out 300ms
+		transform: rotate(-7deg)
+		content: ""
+		background-color: $base-grey
+	&:hover
+		color: #000
+.cta-after-right
+	&:after
+		left: 30%
+
+.cta-after-left
+	&:after
+		left: -30%
+		transform: rotate(4deg)
+.cta-green
+	&:hover
+		&:after
+			background-color: $base-green
+.cta-blue
+	&:hover
+		&:after
+			background-color: $base-blue
+
+.cta-red
+	&:hover
+		&:after
+			background-color: $base-red
+.cta-hidden
+	visibility: hidden
+/* rotating circle */
+.do-heads-view
+	position: relative
+	width: 130px
+	height: 50px
+	overflow: hidden
+	border-radius: 5px
+	background-color: $base-grey
+	left: 50%
+	margin-left: -65px
+
+.do-heads-wrapper
+	position: relative
+	animation: 60s ease-in-out heads  infinite
+	width: 300%
+
+.do-heads-ul
+	width: 130px
+	position: relative
+	display: inline-block
+	text-align: center
+
+	li
+		margin: 20px 0
+
+@keyframes heads
+	0%
+		top: 0
+	2%
+		top: -32px
+	18%
+		top: -32px
+	20%
+		top: -63px
+	33%
+		top: -63px
+		left: 0
+	35%
+		top: -63px
+		left: -132px
+
+	49%
+		top: -63px
+	51%
+		top: -32px
+
+	66%
+		top: -32px
+	68%
+		top: 0
+	83%
+		top: 0
+		left: -132px
+	85%
+		top: 0
+		left: 0
+	100%
+		top: 0
+		left: 0
+
+
+
+
+
+.circle-rotate
+	width: calc(100vw / 4)
+	height: calc(100vw / 4)
+	// position: relative
+	border-radius: 50%
+
+	display: inline-block
+	overflow: hidden
+	box-shadow: inset 2px 3px 3px #000
+	background-color: $base-grey
+
+.circle-rotate-wrapper
+	display: inline-block
+	position: relative
+	animation: 30s ease-in-out infinite circles
+	transform: rotate(0deg)
+
+
+.circle-rotate-item
+	width: calc(100vw / 4)
+	height: calc(100vw / 4)
+	position: relative
+	border-radius: 50%
+	overflow: hidden
+	transform-origin: 50% 150%
+
+	img
+		width: 100%
+		height: auto
+
+.circle-rotate-concept
+	background-color: $base-green
+
+.circle-rotate-front-end
+	transform: rotate(120deg)
+	background-color: $base-blue
+	top: calc((100vw / -4))
+
+
+.circle-rotate-backend
+	transform: rotate(240deg)
+	background-color: $base-red
+	top: calc((100vw / 4)*-2)
+
+
+/*circle-animation*/
+
+@keyframes circles
+	0%
+		transform: rotate(0deg)
+	4%
+		transform: rotate(-120deg)
+	35%
+		transform: rotate(-120deg)
+	39%
+		transform: rotate(-240deg)
+	65%
+		transform: rotate(-240deg)
+
+	69%
+		transform: rotate(-360deg)
+	100%
+		transform: rotate(-360deg)
+
+/* portfolio-section, id = done */
+
+.portfolio-section-wrapper
+	margin: 10% 0
+	clear: both
+
+.landing-portfolio
+	overflow: hidden
+	transform: skewY(5deg)
+	height: 20vw
+	margin: -200px 0 -100px 0
+.landing-portfolio-item
+	background-color: #000
+	overflow: hidden
+	display: inline-block
+	height: 160%
+	position: relative
+	top: -10%
+
+
+.landing-portfolio-item-img
+	transform: skewY(-5deg)
+	display: inline-block
+	opacity: .5
+	width: 130%
+	height: auto
+	position: relative
+	left: 0
+	top: 0
+	transition: 400ms all ease-in-out
+	&:hover
+		opacity: 1
+		left: -30%
+		top: -2%
+
+
+/*bio-section*/
+#who
+	margin-bottom: 0
+
+	.landing-questions
+		padding: 0
+		margin-bottom: 0
+.who-text
+	margin: -50px 0 300px 0
+.portrait-wrapper
+	position: relative
+	&::after
+		content: ""
+		background-color: #333333
+		width: 100vw
+		height: 125px
+		position: relative
+		display: inline-block
+
+
+
+
+.portrait
+	width: 250px
+	height: 250px
+	max-width: 100vw
+	border-radius: 50%
+	position: absolute
+	bottom: 17vw
+	z-index: 200
+
+	left: calc(50% - 125px)
+
+
+.portrait-second
+	z-index: 200
+
+
+
+.portrait-img-front
+	background-color: $base-green
+	height: 100%
+	width: 100%
+	position: relative
+	border-radius: 50%
+	display: inline-block
+	animation: 40s ease-in-out portrait infinite
+	opacity: 1
+.portrait-img-back
+	background-color: $base-red
+	height: 100%
+	width: 100%
+	border-radius: 50%
+	display: inline-block
+	opacity: 1
+
+@keyframes portrait
+	0%
+		opacity: 1
+	23%
+		opacity: 1
+	27%
+		opacity: 0
+	48%
+		opacity: 0
+	52%
+		opacity: 1
+	73%
+		opacity: 1
+	77%
+		opacity: 0
+	98%
+		opacity: 0
+	100%
+		opacity: 1

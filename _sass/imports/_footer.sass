@@ -1,0 +1,82 @@
+/* FOOTER */
+
+footer
+	width: 100%
+	background-color: #333
+	position: fixed
+	bottom: 0
+	z-index: -33333
+	padding-top: 20px
+
+.footer-height
+	height: $footer-height
+
+.footer-wrapper
+	width: calc(100% - (#{$navigation-width} + (#{$identifier-diameter} / 2)))
+	right: 0
+	position: absolute
+	display: inline-block
+
+	a
+
+.footer-logo
+	max-width: 350px
+	z-index: 300
+	margin-bottom: 10px
+
+	svg
+		width: 100%
+
+		float: right
+		&:after
+			clear: both
+
+.footer-links-hover
+	color: $base-grey
+	fill: $base-grey
+	text-decoration: none
+	transition: all ease-in-out 200ms
+	svg
+		transform: rotate(0deg)
+		transition: all ease-in-out 200ms
+	&:hover
+		svg
+			transform: rotate(10deg)
+		color: #fff
+		fill: #fff
+		.rotate-left svg
+
+			transform: rotate(-10deg)
+
+
+
+.footer-links
+	display: inline-block
+	font-size: 16px
+	line-height: 1.7
+	position: relative
+
+
+.footer-links-left
+	text-align: right
+	transform: rotate(25deg)
+	padding-right: 40px
+	margin-right: -20px
+	transform-origin: bottom right
+	li
+		transform: rotate(-25deg)
+		transform-origin: bottom right
+
+.social-icon-wrapper
+	display: inline-block
+
+
+.social-icon
+	width: 35px
+	position: relative
+
+
+.github
+	left: 20px
+	bottom: -8px
+	position: relative
