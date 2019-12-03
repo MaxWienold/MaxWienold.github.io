@@ -1,6 +1,6 @@
 ---
 title: 'Mole Basher'
-link: '/assets/img/literaturfruehlingsehrklein.jpg'
+link: https://maxwienold.github.io/MoleBasher/
 tags:
   - vanilla JS
   - browsergame

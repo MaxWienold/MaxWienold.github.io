@@ -1,6 +1,6 @@
 ---
 title: 'Tic Tac Toe'
-link: '/assets/img/literaturfruehlingsehrklein.jpg'
+link: 'https://maxwienold.github.io/vueTicTacToe/'
 tags:
   - vue.js
   - browsergame
