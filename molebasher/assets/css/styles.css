@@ -1,0 +1,114 @@
+@font-face {
+    font-family: hand;
+    src: url(../../hand.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #72c6db;
+}
+
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+.mole {
+    transform: translateY(5%);
+    opacity: 0;
+    transition: all 150ms ease-out;
+    
+}
+
+.mole.active{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.info{
+    position: absolute;
+
+    top: 0;
+    font-family: hand;
+    color:rebeccapurple;
+    font-size: 3.9vw;
+    padding: 0 10%; 
+}
+
+.info_time{
+    right: 0;
+}
+
+#field{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    margin: auto;
+    max-height: 100vh;
+}
+
+.wrapper{
+    position: relative;
+}
+
+
+#hammer{
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+    position: fixed;
+    transition: transform 25ms ease-in;
+
+}
+#hammer.active{
+    transform: rotate(0deg);
+}
+
+.menu{
+    padding-top: 20%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    font-family: hand;
+    color: #01fff2;
+    transition: all 200ms eas-in-out;
+    text-align: center;
+}
+
+#menu-result{
+    display: none;
+}
+
+h1{
+    font-size: 8vw;
+    color: chartreuse;
+    
+}
+h2{
+    font-size: 3.5vw;
+}
+h4{
+    display: inline-block;
+    font-size: 3vw;
+    padding: 0 10% 0 10%; 
+}
+
+.choice{
+    cursor: pointer;
+    color: #ff073d;
+}
+
+.choice:hover{
+    color: #fbff07;
+    
+}
+

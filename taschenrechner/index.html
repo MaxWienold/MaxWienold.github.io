@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skeleton.css">
+
+</head>
+<body>
+    <div class="calc-wrap container">
+        <div class="row">
+        <input type="text" tabindex="0" class="columns ten" id="input">
+    </div> 
+            <div class="row">
+                <div class="num-cell two columns">7</div>
+                <div class="num-cell two columns">8</div>
+                <div class="num-cell columns two">9</div>
+                <div class="oper-cell columns two">(</div>
+                <div class="oper-cell columns two">)</div>
+            </div>
+            <div class="row">
+                <div class="num-cell columns two">4</div>
+                <div class="num-cell columns two">5</div>
+                <div class="num-cell columns two">6</div>
+                <div class="oper-cell columns two">+</div>
+                <div class="oper-cell columns two">*</div>
+            </div>
+            <div class="row">
+                <div class="num-cell columns two">1</div>
+                <div class="num-cell columns two">2</div>
+                <div class="num-cell columns two">3</div>
+                <div class="oper-cell columns two">/</div>
+                <div class="oper-cell columns two">-</div>
+            </div>
+            <div class="row">
+                <div class="num-cell columns two">.</div>
+                <div class="num-cell columns two" id="zero-cell">0</div>
+                <div class="num-cell columns two" id="answer">Ans</div>
+                <div class="oper-cell columns two" id="delete">DEL</div>
+                <div class="oper-cell columns two" id="result">=</div>
+            </div>
+
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>

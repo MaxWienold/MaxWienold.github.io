@@ -1,20 +1,40 @@
 /*Typography */
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Raleway:400,400i,600,600i&subset=latin-ext");
 @font-face {
   font-family: DoulosSILW;
-  src: url("DoulosSIL-R.woff"); }
+  src: url("../font/DoulosSIL-5.000-web/DoulosSIL-R.ttf"); }
+@font-face {
+  font-family: Josefin;
+  font-weight: 700;
+  src: url("../font/Josefin_Sans/static/JosefinSans-Bold.ttf"); }
+@font-face {
+  font-family: Josefin;
+  font-weight: 400;
+  src: url("../font/Josefin_Sans/static/JosefinSans-Regular.ttf"); }
+@font-face {
+  font-family: Raleway;
+  font-weight: 700;
+  font-style: italic;
+  src: url("../font/Raleway/static/Raleway-SemiBoldItalic.ttf"); }
+@font-face {
+  font-family: Raleway;
+  font-weight: 700;
+  src: url("../font/Raleway/static/Raleway-SemiBold.ttf"); }
+@font-face {
+  font-family: Raleway;
+  font-weight: 400;
+  src: url("../font/Raleway/static/Raleway-Regular.ttf"); }
 /* general classes */
 .font-display {
-  font-family: "Josefin Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700; }
-
-.font-weight-normal {
-  font-weight: 400; }
+  font-family: "Josefin", "Arial", serif;
+  font-weight: 900; }
 
 .font-running {
   font-family: "Raleway", sans-serif;
+  font-weight: 400;
   color: #000; }
+
+.font-weight-normal {
+  font-weight: 400; }
 
 .font-giant {
   font-size: 3.5rem;
@@ -50,11 +70,8 @@
   position: relative;
   z-index: 301; }
 
-.font-head-padding {
+.font-head {
   padding-bottom: 100px; }
-
-.font-navi-side {
-  line-height: 50%; }
 
 .font-navi {
   line-height: 95%; }
@@ -333,7 +350,7 @@ body {
 @media (max-width: 530px) {
   .grid-container-s {
     display: grid;
-    grid-template: repeat(20, calc(100vh / 12))/repeat(8, 1fr); }
+    grid-template: repeat(30, calc(100vh / 10))/repeat(8, 1fr); }
 
   .grid-item-s {
     grid-row: span 5;
@@ -925,7 +942,6 @@ footer {
   position: relative;
   border-radius: 50%;
   display: inline-block;
-  animation: 40s ease-in-out portrait infinite;
   opacity: 1; }
 
 .portrait-img-back {
